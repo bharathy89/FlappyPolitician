@@ -1,22 +1,29 @@
 package com.politicalfun.gameworld;
 
-import com.badlogic.gdx.math.Rectangle;
+import com.politicalfun.gameobjects.Neta;
+import com.politicalfun.gameobjects.ScrollHandler;
 
 public class GameWorld {
 
-	private Rectangle rect = new Rectangle(0, 0, 17, 12);
+    private Neta neta;
+    private ScrollHandler scroller;
+
+    public GameWorld(int midPointY) {
+        neta = new Neta(33, midPointY - 5, 17, 12);
+        scroller = new ScrollHandler(midPointY + 66);
+    }
 
     public void update(float delta) {
-        System.out.println("GameWorld - update");
-        rect.x++;
-        if (rect.x > 137) {
-            rect.x = 0;
-        }
+        neta.update(delta);
+        scroller.update(delta);
+    }
+
+    public Neta getNeta() {
+        return neta;
 
     }
     
-    public Rectangle getRect() {
-        return rect;
+    public ScrollHandler getScroller() {
+        return scroller;
     }
-
 }
