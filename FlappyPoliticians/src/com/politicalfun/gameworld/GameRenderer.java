@@ -65,7 +65,7 @@ public class GameRenderer {
 		shapeRenderer.begin(ShapeType.Filled);
 
 		// Draw Background color
-		shapeRenderer.setColor(55 / 255.0f, 80 / 255.0f, 100 / 255.0f, 1);
+		shapeRenderer.setColor(51 / 255.0f, 51 / 255.0f, 51 / 255.0f, 1);
 		shapeRenderer.rect(0, 0, 136, midPointY + 66);
 
 		// Draw Grass
@@ -80,7 +80,7 @@ public class GameRenderer {
 
 		batcher.begin();
 		batcher.disableBlending();
-		batcher.draw(bg, 0, 0 , 372, 256);
+		batcher.draw(bg, 0, 0 , 186, 128);
 
 		// 1. Draw Grass
 		drawGrass();

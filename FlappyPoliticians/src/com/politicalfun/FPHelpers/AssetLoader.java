@@ -52,16 +52,16 @@ public class AssetLoader {
 		bar = new TextureRegion(texture, 0, 14, 22, 3);
 		bar.flip(false, true);
 
-		texture = new Texture(Gdx.files.internal("data/birdie.png"));
+		texture = new Texture(Gdx.files.internal("data/polit.png"));
 		texture.setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
 
-		netaDown = new TextureRegion(texture, 0, 0, 64, 64);
+		netaDown = new TextureRegion(texture, 0, 0, 256, 163);
 		netaDown.flip(false, true);
 
-		neta = new TextureRegion(texture, 0, 0, 64, 64);
+		neta = new TextureRegion(texture, 0, 0, 256, 163);
 		neta.flip(false, true);
 
-		netaUp = new TextureRegion(texture, 0, 0, 64, 64);
+		netaUp = new TextureRegion(texture, 0, 0, 256, 163);
 		netaUp.flip(false, true);
 
 		TextureRegion[] netas = { netaDown, neta, netaUp };

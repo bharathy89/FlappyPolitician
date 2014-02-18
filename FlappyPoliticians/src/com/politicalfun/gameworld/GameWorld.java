@@ -9,7 +9,7 @@ public class GameWorld {
     private ScrollHandler scroller;
 
     public GameWorld(int midPointY) {
-        neta = new Neta(33, midPointY - 5, 17, 12);
+        neta = new Neta(33, midPointY - 5, 25, 18);
         scroller = new ScrollHandler(midPointY + 66);
     }
 
