@@ -2,15 +2,14 @@ package com.politicalfun.flappypoliticians;
 
 import com.badlogic.gdx.Game;
 import com.politicalfun.FPHelpers.AssetLoader;
-import com.politicalfun.screens.GameScreen;
+import com.politicalfun.screens.SplashScreen;
 
 public class FPGame  extends Game {
 	
 	@Override
     public void create() {
-        System.out.println("ZBGame Created!");
         AssetLoader.load();
-        setScreen(new GameScreen());
+        setScreen(new SplashScreen(this));
     }
 
     @Override
